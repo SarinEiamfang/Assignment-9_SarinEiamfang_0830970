@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+<!--
+	WEB301 Assignment 9
+    Recreate assignment 3 using Bootstrap components
+	Filename: fingers.html
+	
+	Author: Sarin Eiamfang 0830970
+	Date:   2023-11-21
+-->
+
+        <title>fingers! - find good movies here!</title>
+       
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap" rel="stylesheet">
+    
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap" rel="stylesheet">
+
+		<!--bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+        <!-- Navbar -->
+		<nav class="navbar navbar-expand-lg bg-body-tertiary h4 bg-success">
+			<div class="container-fluid my-3">
+				  	<a class="navbar-brand" href="#">
+						<div class="h1 mx-3 text-white"><em>fingers!</em></div>
+					</a>
+				  		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+				  		</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					  	<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
+					  	</li>
+					  	<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Discover</a>
+					  	</li>
+					  	<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Wishlists</a>
+					  	</li>
+
+        <!-- Dropdown -->
+		  			  	<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						  	Profile
+							</a>
+						<ul class="dropdown-menu">
+						  	<li><a class="dropdown-item" href="#">Manage Profiles</a></li>
+						  	<li><a class="dropdown-item" href="#">Account</a></li>
+						  	<li><a class="dropdown-item" href="#">App Settings</a></li>
+						</ul>
+					  	</li>
+
+        <!-- Search -->
+					</ul>
+					<form class="d-flex" role="search">
+					  	<input class="form-control me-2" type="search" placeholder="type keyword search" aria-label="Search">
+					  	<button class="btn btn-outline-success" type="submit">Search</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+
+		<header>
+		<!-- Alert -->
+					<div class="alert alert-secondary mt-3 text-danger" role="alert">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
+							<path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/>
+							<path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+						</svg>
+						  This is Sarin Eiamfang's assignment.
+					</div>
+		</header>
+
+		<section>
+		<!-- Scrollspy -->
+			<nav class="navbar bg-body-tertiary px-3 mb-3">
+				<a class="navbar-brand" href="#">
+					<div class="display-5">Sex Education</div>
+				</a>
+
+				<ul class="nav nav-pills">
+					<li class="nav-item">
+						<a class="nav-link" href="#scrollspyHeading1">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#scrollspyHeading2">Storyline</a>
+					</li>
+				</ul>
+			</nav>
+			<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+				data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+				<h4 id="scrollspyHeading1">About</h4>
+				<p>Sex Education is a British teen sex comedy drama television series created by Laurie Nunn for Netflix. It follows the lives of the teenagers and adults in the fictional town of Moordale as they contend with various personal dilemmas, often related to sexual intimacy. It stars an ensemble cast that includes Asa Butterfield, Gillian Anderson, Ncuti Gatwa, Emma Mackey, Connor Swindells, Kedar Williams-Stirling, Alistair Petrie, Mimi Keene, and Aimee Lou Wood.</p>
+				<h4 id="scrollspyHeading2">Storyline</h4>
+				<p>Sex Education primarily follows Otis Milburn, a student at Moordale Secondary School. Otis begins the series ambivalent about sex, in part because his single mother, Jean Milburn, is a sex therapist who frequently has affairs with male suitors but does not maintain romantic relationships.</p>
+
+		</section>
+
+		<!-- Card -->
+		<div class="card-deck">
+			<div class="card mb-4">
+			  <img src="images/se1.jpeg" class="card-img-top" alt="Sex Education SS1">
+			  <div class="card-body">
+				<h4 class="card-title">Sex Education SS1</h4>
+				<p class="card-text">Despite the ministrations of sex therapist mom Jean and encouragement from pal Eric, Otis Worries that he can't get it on. He's not the only one.</p>
+				<a href="#" class="btn btn-primary">Watch</a>
+				<p class="card-text"><small class="text-muted">Last watched 30 days ago</small></p>
+			  </div>
+			</div>
+			<div class="card mb-4">
+			  <img src="images/se3.jpg" class="card-img-top" alt="Sex Education SS2">
+			  <div class="card-body">
+				<h4 class="card-title">Sex Education SS2</h4>
+				<p class="card-text">New students arrive at Moordale Secondary, including Ola, who becomes Otis's first girlfriend. Maeve struggles to confess her feelings for Otis.</p>
+				<a href="#" class="btn btn-primary">Watch</a>
+				<p class="card-text"><small class="text-muted">Last watched 60 days ago</small></p>
+			  </div>
+			</div>
+			<div class="card mb-4">
+			  <img src="images/se4.jpg" class="card-img-top" alt="Sex Education SS3">
+			  <div class="card-body">
+				<h4 class="card-title">Sex Education SS3</h4>
+				<p class="card-text">A new school year begins as Otis is having casual sex with Ruby while Eric and Adam are made official. And new headmistress Hope Haddon's plans to revamp Moordale Secondary creates conflict with the students.</p>
+				<a href="#" class="btn btn-primary">Watch</a>
+				<p class="card-text"><small class="text-muted">Last watched 1 day ago</small></p>
+			  </div>
+			</div>
+		  </div>
+		
+			<footer class="bg-dark py-2">
+				<p class="mx-2 my-2 text-center text-white">&copy; 2023 <em>FINGERS!</em> by Sarin Eiamfang</p>
+			</footer>			
+	</body>
+</html>
+
